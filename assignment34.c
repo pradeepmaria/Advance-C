@@ -1,5 +1,5 @@
 #include <stdio.h>
-int replace_blank(char *str1)
+int replace_blank(char *str1,char *str2)
 {
 	int i,flag=0,j=0;
 	for(i=0; str1[i] != '\0';i++)
@@ -38,30 +38,7 @@ int main()
     printf("Enter the string with more spaces in between two words\n");
     scanf("%[^\n]", str1);
     
-    replace_blank(str1);
+    replace_blank(str1,str2);
     
     printf("%s\n", str2);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

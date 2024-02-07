@@ -1,6 +1,5 @@
 #include <stdio.h>				//includes standard I/O header files
-#include<string.h>                                  //includes string header files
-
+                                  
 void swap(char [], char []);                         //implicit declaration of function swap
 void combination(char [],int ,int );                //implicit declaration of function combination
 int my_strlen(char []);                            //implicit declaration of function string length
@@ -29,7 +28,6 @@ int main()
 	n = my_strlen(str);                        //calling string length function in n
        	combination(str,0,n-1);                   //calling combination function   
         	
-
         return 0;
 }
 int my_strlen(char str[])                            //define string length function
@@ -47,7 +45,7 @@ void combination(char str[], int ind, int end)      //defining function
 
     if(ind == end) 								   
     {
-    	printf("%s\n", str);                  //if index vallue is equal to end value, prints string
+    	printf("%s\n", str);                  //if index value is equal to end value, prints string
     }
     else
     	for(i = ind; i <= end; i++)          //loop will run index values of string
@@ -64,4 +62,4 @@ void swap(char *str1, char *str2)      //swap function swaps index of string to 
     temp = *str1;
     *str1 = *str2;
     *str2 = temp; 
-}                                       //end of swap function and end of prograim
+}                                       //end of swap function and end of program
