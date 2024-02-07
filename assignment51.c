@@ -51,6 +51,7 @@ int main()
     {
         printf("Matrix multiplication is not possible");
     }
+
     return 0;
 }
 int matrix_mul(int **matrix_a,int row1,int col1, int **matrix_b,int row2,int col2, int **multi) //defining the function
